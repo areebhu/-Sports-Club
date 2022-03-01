@@ -1,0 +1,2105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body
+{
+    background-color: black;
+}
+/* <!-- header section starts --> */
+.header
+{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 3;
+    box-shadow: 3px 3px 3px rgba(78, 77, 77, 0);
+}
+.header header
+{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    transition-duration: 0.3s;
+    z-index: 3;
+}
+.header header .logo
+{
+    width:50px;
+    height: 50px;
+    margin-left: 20px;
+    display: flex;
+    margin-top: 10px;
+}
+.header header .logo img
+{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    object-fit: cover;
+}
+.header header h3
+{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fff;
+    font-family: 'Lemon',sans-serif;
+    margin-right: 290px;
+}
+.header header h3 span
+{
+    color: orangered;
+}
+.header header ul
+{
+    display: flex;
+    z-index: 3;
+}
+.header header ul li 
+{
+    margin: 0px 0px 0px 0px;
+    padding-right: 40px;
+    display: flex;
+    z-index: 3;
+  
+}
+.header header ul li a
+{
+    color: white;
+    font-weight: 600; 
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.301);
+    letter-spacing: 1.5px;
+    font-family: sans-serif;
+    transition-duration: 0.3s;
+    z-index: 3;
+    display: flex;
+    position: relative;
+}
+.header header ul li a::before
+{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0px;
+    height: 2px;
+    background-color: orangered;
+    transition-duration: 0.3s;
+}
+.header header ul li a:hover
+{
+    color: rgb(255, 91, 15);
+}
+.header header ul li a:hover::before
+{
+    box-shadow: none;
+    width: 100%;
+   
+}
+.header header.sticky
+{
+    background-color: rgb(7, 7, 7);
+    padding: 5px 10px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.616);
+    z-index: 3;
+}
+header .facilityMenu
+{
+    position: relative;
+}
+header .facilityMenu ul
+{
+    display: flex;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 220px;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(8, 8, 8);
+    transition-duration: 0.2s;
+    overflow: hidden;
+}
+header .facilityMenu ul li
+{
+    margin: 14px 0;
+    padding: 0;
+    width: 100%;
+}
+header .facilityMenu ul li a
+{
+    display: flex;
+    padding: 4px 8px;
+    transition-duration: 0.2s;
+    text-shadow: none;
+}
+header .facilityMenu ul li a:hover
+{
+    background-color: rgba(37, 37, 37, 0);
+    color: rgb(255, 255, 255);
+}
+header .facilityMenu:hover ul
+{
+    opacity: 1;
+    height: 130px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
+}
+
+/* membership  */
+header .membershipMenu
+{
+    position: relative;
+}
+header .membershipMenu ul
+{
+    display: block;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 220px;
+    height: 0;
+    opacity: 0;
+    background-color: rgb(8, 8, 8);
+    transition-duration: 0.2s;
+    overflow: hidden;
+}
+header .membershipMenu ul li
+{
+    margin: 14px 0;
+    padding: 0;
+    width: 100%;
+}
+header .membershipMenu ul li a
+{
+    display: block;
+    padding: 4px 8px;
+    transition-duration: 0.2s;
+    text-shadow: none;
+}
+header .membershipMenu ul li a:hover
+{
+    background-color: rgba(37, 37, 37, 0);
+    color: rgb(255, 255, 255);
+}
+header .membershipMenu:hover ul
+{
+    opacity: 1;
+    height: 100px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
+}
+/* header section ends  */
+
+/* banner section starts  */
+.banner
+{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+.banner img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+}
+.banner .anchor
+{
+    width: 100%;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    box-shadow: 4px 4px 4px rgba(235, 94, 12, 0.616);
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    bottom: -46px;
+    z-index: 2;
+}
+.banner .anchor h2
+{
+    position: absolute;
+    left: 150px;
+    font-size: 18px;
+    font-family:'Poppins', serif;
+    font-weight: 600;
+}
+.banner .anchor h2 a 
+{
+    color: rgb(255, 255, 255);
+}
+.banner .anchor h2 a:hover
+{
+    color: orangered;
+}
+.banner .anchor h3
+{
+    position: absolute;
+    left: 230px;
+    font-size: 18px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.banner .anchor i
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 86, 19, 0.815);
+    position: absolute;
+    left: 215px;
+}
+
+/* banner section ends  */
+
+/* indoor games section start  */
+.mainHeading
+{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+.mainHeading h2
+{
+    font-size: 4em;
+    color: white;
+    position: absolute;
+    font-family: 'poppins', sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.555);
+}
+.mainHeading h2 span
+{
+    color: orangered;
+}
+.indoorGames
+{
+    position: relative;
+    width: 100%;
+    height: 480vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.indoorGames h2
+{
+    font-size: 3em;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    top: 5px;
+    left: 0%;
+    margin-left: 50px;
+}
+.indoorGames h2 span
+{
+    color: orangered;
+}
+.indoorGames .tableTennis
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 100px;
+}
+.indoorGames .tableTennis .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.indoorGames .tableTennis .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.indoorGames .tableTennis .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.indoorGames .tableTennis .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+}
+.indoorGames .tableTennis .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.192);
+}
+.indoorGames .tableTennis .description h2 span
+{
+    color: orangered;
+}
+.indoorGames .tableTennis .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    margin-top: -30px;
+    font-size: 15px;
+    padding: 20px;
+    
+}
+.indoorGames .tableTennis .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* snooker  */
+
+.indoorGames .snooker
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 600px;
+}
+.indoorGames .snooker .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.indoorGames .snooker .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.indoorGames .snooker .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.indoorGames .snooker .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.indoorGames .snooker .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.indoorGames .snooker .description h2 span
+{
+    color: orangered;
+}
+.indoorGames .snooker .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    margin-top: -10px;
+    font-size: 15px;
+}
+.indoorGames .snooker .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Foosball  */
+.indoorGames .foosBall
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:69em;
+}
+.indoorGames .foosBall .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.indoorGames .foosBall .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.indoorGames .foosBall .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.indoorGames .foosBall .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.indoorGames .foosBall .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.indoorGames .foosBall .description h2 span
+{
+    color: orangered;
+}
+.indoorGames .foosBall .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    margin-top: -18px;
+    font-size: 15px;
+}
+.indoorGames .foosBall .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* carrom boards */
+.indoorGames .carromBoard
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:101em;
+}
+.indoorGames .carromBoard .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.indoorGames .carromBoard .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.indoorGames .carromBoard .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.indoorGames .carromBoard .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.indoorGames .carromBoard .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.indoorGames .carromBoard .description h2 span
+{
+    color: orangered;
+}
+.indoorGames .carromBoard .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    margin-top: -20px;
+    font-size: 15px;
+}
+.indoorGames .carromBoard .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Dart board  */
+.indoorGames .dartBoard
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:133em;   
+}
+.indoorGames .dartBoard .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.indoorGames .dartBoard .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.indoorGames .dartBoard .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.indoorGames .dartBoard .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.indoorGames .dartBoard .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.indoorGames .dartBoard .description h2 span
+{
+    color: orangered;
+}
+.indoorGames .dartBoard .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.indoorGames .dartBoard .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Gymnasium  */
+.indoorGames .gymNasium
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:133em;   
+}
+.indoorGames .gymNasium .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.indoorGames .gymNasium .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.indoorGames .gymNasium .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.indoorGames .gymNasium .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.indoorGames .gymNasium .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.indoorGames .gymNasium .description h2 span
+{
+    color: orangered;
+}
+.indoorGames .gymNasium .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.indoorGames .gymNasium .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Treadmills  */
+.indoorGames .treadMill
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:165em;   
+}
+.indoorGames .treadMill .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.indoorGames .treadMill .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.indoorGames .treadMill .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.indoorGames .treadMill .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.indoorGames .treadMill .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 7em;
+}
+.indoorGames .treadMill .description h2 span
+{
+    color: orangered;
+}
+.indoorGames .treadMill .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.indoorGames .treadMill .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+
+/* indoor games section ends  */
+
+
+
+/* outdoor games section starts  */
+.outdoorGames
+{
+    position: relative;
+    width: 100%;
+    height: 410vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
+.outdoorGames h2
+{
+    font-size: 3em;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    top: 0%;
+    left: 0%;
+    margin-left: 50px;
+}
+.outdoorGames h2 span
+{
+    color: orangered;
+}
+.outdoorGames .footBall
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 100px;
+}
+.outdoorGames .footBall .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.outdoorGames .footBall .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.outdoorGames .footBall .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.outdoorGames .footBall .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+}
+.outdoorGames .footBall .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.192);
+}
+.outdoorGames .footBall .description h2 span
+{
+    color: orangered;
+}
+.outdoorGames .footBall .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: -10px;
+    margin-top: 10px;
+    
+}
+.outdoorGames .footBall .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* snooker  */
+
+.outdoorGames .cricket
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 600px;
+}
+.outdoorGames .cricket .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.outdoorGames .cricket .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.outdoorGames .cricket .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.outdoorGames .cricket .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.outdoorGames .cricket .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.outdoorGames .cricket .description h2 span
+{
+    color: orangered;
+}
+.outdoorGames .cricket .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    margin-bottom: -10px;
+    font-size: 15px;
+}
+.outdoorGames .cricket .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Foosball  */
+.outdoorGames .badminton
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:69em;
+}
+.outdoorGames .badminton .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.outdoorGames .badminton .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.outdoorGames .badminton .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.outdoorGames .badminton .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.outdoorGames .badminton .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.outdoorGames .badminton .description h2 span
+{
+    color: orangered;
+}
+.outdoorGames .badminton .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    font-size: 15px;
+}
+.outdoorGames .badminton .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* carrom boards */
+.outdoorGames .basketBall
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:101em;
+}
+.outdoorGames .basketBall .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.outdoorGames .basketBall .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.outdoorGames .basketBall .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.outdoorGames .basketBall .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.outdoorGames .basketBall .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.outdoorGames .basketBall .description h2 span
+{
+    color: orangered;
+}
+.outdoorGames .basketBall .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.outdoorGames .basketBall .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Dart board  */
+.outdoorGames .bicycles
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:133em;   
+}
+.outdoorGames .bicycles .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.outdoorGames .bicycles .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.outdoorGames .bicycles .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.outdoorGames .bicycles .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.outdoorGames .bicycles .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.outdoorGames .bicycles .description h2 span
+{
+    color: orangered;
+}
+.outdoorGames .bicycles .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.outdoorGames .bicycles .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Gymnasium  */
+.outdoorGames .swimmingPool
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:133em;   
+}
+.outdoorGames .swimmingPool .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.outdoorGames .swimmingPool .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.outdoorGames .swimmingPool .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.outdoorGames .swimmingPool .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.outdoorGames .swimmingPool .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.outdoorGames .swimmingPool .description h2 span
+{
+    color: orangered;
+}
+.outdoorGames .swimmingPool .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.outdoorGames .swimmingPool .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* outdoor games section ends  */
+
+
+/* recreation section starts  */
+.recreation
+{
+    position: relative;
+    width: 100%;
+    height: 430vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
+.recreation h2
+{
+    font-size: 3em;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    top: 0%;
+    left: 0%;
+    margin-left: 50px;
+}
+.recreation h2 span
+{
+    color: orangered;
+}
+.recreation .goKart
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 100px;
+}
+.recreation .goKart .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.recreation .goKart .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.recreation .goKart .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.recreation .goKart .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    right: 0%;
+}
+.recreation .goKart .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.192);
+}
+.recreation .goKart .description h2 span
+{
+    color: orangered;
+}
+.recreation .goKart .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+.recreation .goKart .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* snooker  */
+
+.recreation .bungee
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 600px;
+}
+.recreation .bungee .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.recreation .bungee .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.recreation .bungee .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.recreation .bungee .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.recreation .bungee .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.recreation .bungee .description h2 span
+{
+    color: orangered;
+}
+.recreation .bungee .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    font-size: 15px;
+}
+.recreation .bungee .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Foosball  */
+.recreation .scorpionCars
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:69em;
+}
+.recreation .scorpionCars .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.recreation .scorpionCars .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.recreation .scorpionCars .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.recreation .scorpionCars .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.recreation .scorpionCars .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.recreation .scorpionCars .description h2 span
+{
+    color: orangered;
+}
+.recreation .scorpionCars .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 20px;
+    font-size: 15px;
+}
+.recreation .scorpionCars .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* carrom boards */
+.recreation .dangerSlides
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:101em;
+}
+.recreation .dangerSlides .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.recreation .dangerSlides .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.recreation .dangerSlides .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.recreation .dangerSlides .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.recreation .dangerSlides .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.recreation .dangerSlides .description h2 span
+{
+    color: orangered;
+}
+.recreation .dangerSlides .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.recreation .dangerSlides .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Dart board  */
+.recreation .iceSkating
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:133em;   
+}
+.recreation .iceSkating .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.recreation .iceSkating .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.recreation .iceSkating .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.recreation .iceSkating .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.recreation .iceSkating .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.recreation .iceSkating .description h2 span
+{
+    color: orangered;
+}
+.recreation .iceSkating .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.recreation .iceSkating .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* Gymnasium  */
+.recreation .boatingLake
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top:165em;   
+}
+.recreation .boatingLake .imgBox
+{
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.322);
+    overflow: hidden;
+}
+.recreation .boatingLake .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    transition-duration: 0.4s;
+}
+.recreation .boatingLake .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+.recreation .boatingLake .description
+{
+    position: absolute;
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    right: 0%;
+    flex-direction: column;
+}
+.recreation .boatingLake .description h2
+{
+    font-size: 2em;
+    font-family: 'Quintessential', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    top: 0%;
+    margin-top: 10px;
+    margin-left: 7em;
+}
+.recreation .boatingLake .description h2 span
+{
+    color: orangered;
+}
+.recreation .boatingLake .description p
+{
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 15px;
+}
+.recreation .boatingLake .description p span
+{
+    color: orangered;
+    font-size:2em;
+    font-weight: 600;
+}
+/* recreation section edns  */
+
+/* <!-- events section start  --> */
+.events
+{
+    width: 100%;
+    height: 350vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
+.events h2
+{
+    font-size: 4em;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    top: 0%;
+    left: 0%;
+    margin-left: 50px;
+    margin-top: 5em;
+}
+.events h2 span
+{
+    color: orangered;
+}
+.events h4
+{
+    position: absolute;
+    color: #fff;
+    font-family: 'Quintessential',sans-serif;
+    font-size: 3em;
+    bottom: 0%;
+    margin-bottom: 100px;
+    letter-spacing: 2px;
+}
+.events h4 span
+{
+    color: orangered;
+}
+.events .pakistanDay
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 30em;
+}
+.events .pakistanDay .description
+{
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+}
+.events .pakistanDay .description h3
+{
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+    font-family: 'poppins',sans-serif;
+    top: 0%;
+    margin-top: 30px;
+    margin-left: 100px;
+    position: absolute;
+}
+.events .pakistanDay .description h3 span
+{
+    color: orangered;
+}
+.events .pakistanDay .description p
+{
+    color: #fff;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.151);
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    padding: 80px 160px;
+    margin-top: 70px;
+
+}
+.events .pakistanDay .imgBox
+{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    overflow: hidden;
+}
+.events .pakistanDay .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    transition-duration: 0.3s;
+}
+.events .pakistanDay .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+
+/* sportsGala */
+.events .sportsGala
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 63em;
+}
+.events .sportsGala .description
+{
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+}
+.events .sportsGala .description h3
+{
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+    font-family: 'poppins',sans-serif;
+    top: 0%;
+    margin-top: 30px;
+    margin-left: 200px;
+    position: absolute;
+}
+.events .sportsGala .description h3 span
+{
+    color: orangered;
+}
+.events .sportsGala .description p
+{
+    color: #fff;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.151);
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    padding: 80px 160px;
+    margin-top: 70px;
+
+}
+.events .sportsGala .imgBox
+{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    overflow: hidden;
+}
+.events .sportsGala .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    transition-duration: 0.3s;
+}
+.events .sportsGala .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+
+/* stunt karachi  */
+.events .stuntKarachi
+{
+    width: 90%;
+    height: 70vh;
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    top: 0%;
+    margin-top: 95em;
+}
+.events .stuntKarachi .description
+{
+    width: 55%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+}
+.events .stuntKarachi .description h3
+{
+    color: #fff;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.356);
+    font-family: 'poppins',sans-serif;
+    top: 0%;
+    margin-top: 30px;
+    margin-left: 200px;
+    position: absolute;
+}
+.events .stuntKarachi .description h3 span
+{
+    color: orangered;
+}
+.events .stuntKarachi .description p
+{
+    color: #fff;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.151);
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    position: absolute;
+    padding: 80px 160px;
+    margin-top: 70px;
+
+}
+.events .stuntKarachi .imgBox
+{
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    overflow: hidden;
+}
+.events .stuntKarachi .imgBox img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+    position: absolute;
+    transition-duration: 0.3s;
+}
+.events .stuntKarachi .imgBox img:hover
+{
+    transform: scale(1.1);
+}
+/* <!-- events section ends  -->  */
+
+/* footer section  */
+footer
+{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 100px;
+    flex-wrap: wrap;
+    background-color: #111;
+    margin-top: 60px;
+}
+footer .content
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .content .sect
+{
+    margin-right: 30px;
+}
+footer .content .aboutus
+{
+    width: 40%;
+}
+footer .content h2
+{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .content h2::before
+{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color:orangered;
+}
+footer .content .aboutus p
+{
+    color: rgb(194, 192, 192);
+    font-weight: 200;
+    margin-bottom: 15px;
+    font-family: 'poppins', sans-serif;
+}
+footer .content .aboutus ul
+{
+    display: flex;
+}
+footer .content .aboutus ul li
+{
+    list-style: none;
+    margin-right: 20px;
+}
+footer .content .aboutus ul li a
+{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+footer .content .aboutus ul li a:hover
+{
+    background-color:orangered;
+}
+footer .content .aboutus ul li a .fa
+{
+    color: #fff;
+    font-size: 20px;
+}
+footer .content .quicklinks
+{
+    position: relative;
+    width: 25%;
+    padding: 0px 20px;
+}
+footer .content .quicklinks ul li
+{
+    list-style: none;
+}
+footer .content .quicklinks ul li a 
+{
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-family: 'poppins', sans-serif;
+}
+footer .content .quicklinks ul li a:hover
+{
+    color:orangered;
+}
+footer .content .contactus
+{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+footer .content .contactus ul
+{
+    position: relative;
+}
+footer .content .contactus ul li
+{
+    display: flex;
+    margin-bottom: 20px;
+    list-style: none;
+}
+footer .content .contactus ul li span
+{
+    color: rgb(255, 251, 251);
+    font-family: 'poppins', sans-serif;
+}
+footer .content .contactus ul li span:nth-child(1)
+{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    font-family: 'poppins', sans-serif;
+}
+footer .content .contactus ul li a
+{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-family: 'poppins', sans-serif;
+}
+footer .content .contactus ul li a:hover
+{
+    color: #fff;
+}
+.copyright
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #181818;
+    padding: 5px 10px;
+}
+.copyright p
+{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgb(179, 178, 178);
+    font-family: 'poppins', sans-serif;
+}
+.copyright p a
+{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+.copyright p a:hover
+{
+    color: orangered;
+}
+
+/* ends  */

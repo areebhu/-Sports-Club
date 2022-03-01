@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan sports club</title>
+    <link rel="icon" href="Images/Icon.png">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="Images/icon.png">
+</head>
+<body>
+
+    <!-- header section starts -->
+    <div class="header" >
+        <header id="myheader">
+            <div class="logo">
+               <img src="Images/Logo.png" alt="">
+            </div>
+            <h3>yan sports <span>club</span></h3>
+            <ul>
+              <li><a href="Index.html">HOME</a></li>
+              <li><a href="AboutUs.html">ABOUT US</a></li>
+
+              <li class="facilityMenu">
+                <a href="ourFacilities.html">OUR FACILITIES</a>
+                <ul class="facilityDropdown">
+                  <li><a href="ourFacilities.html #indoor">Indoor Games</a></li>
+                  <li><a href="ourFacilities.html #outdoor">Outdoor Games</a></li>
+                  <li><a href="ourFacilities.html #recreation">Recreation</a></li>
+                  <li><a href="ourFacilities.html #events">Events</a></li>
+                </ul>
+              </li>
+
+              <li class="membershipMenu">
+                <a href="Membership.html">MEMBERSHIPS</a>
+              <ul class="membershipDropdown">
+                <li><a href="Membership.html #guest">Guest Membership </a></li>
+                <li><a href="ourFacilities.html #lifetime">Lifetime Membership</a></li>
+              </ul>
+            </li>
+
+              <li><a href="contactUs.html">CONTACT US</a></li>
+          </ul>
+        </header>
+    </div>
+    <!-- header section ends -->
+
+     <!-- banner section starts  -->
+    <section class="banner">
+         
+        <div class="swiper mySwiper">
+
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="Images/Banner image1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="Images/Banner image2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="Images/Banner image3.jpg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="left">
+              
+              <div class="heading"  data-aos="fade-up"  data-aos-duration="1000">
+                  <h2>Welcome to <br>Ryan Sports<span>Club</span></h2>
+              </div>
+              <div class="slogan"  data-aos="fade-up"  data-aos-duration="2000">
+                  <p>Luxury is not a place, it's an experience.</p>
+              </div>
+          </div>
+    </section><br>
+    <!-- banner section ends  -->
+
+
+    <!-- about us starts -->
+    <section class="aboutUs">
+      <div class="imgbox">
+        <img src="Images/About us banner.jpg" alt="">
+      </div>
+
+      <div class="left">
+      <h2>About <span>Us</span></h2><br>
+      <div class="paragraph">
+        <p>Ryan Sports Club is the outcome of The Almighty's Benevolence, Magnificence and Magnanimity</p><br>
+        <p>Dreamworld Resort, Hotel & Golf Course is a magnificent escape to one-of-a-kind getaway in Pakistan. Dreamworld is a family Resort in Karachi that provides attractions for all ages and offer guests with amenities of their choice including loads of family entertainment, artificial beach access, water recreation, dining, golf and lots more.</p>
+      </div>
+      <button><a href="E:/shahzeb/Ryan%20Sports%20Club/AboutUs.html">read more <i class="fa fa-angle-right" aria-hidden="true"></i></a></button>
+      </div>
+
+    </section><br>
+    <!-- about us section ends -->
+
+
+    <!-- our facilities section starts  -->
+    <section class="ourFacilities">
+      <img id="facilityImg" src="Images/our facilities banner.jpg" alt="">
+
+      <div class="heading">
+        <h3>Our<br><span>Facilities</span></h3>
+      </div>
+
+      <div class="imgbox">
+
+        <div class="card1 card" data-aos="fade-up" data-aos-duration="1500">
+          <img src="Images/indoor sport banner.jpg" alt="">
+          <div class="indoorsports titleDiv">
+          <h4><a href="ourFacilities.html #indoor">INDOOR GAMES</a></h4>
+          </div>
+        </div>
+
+        <div class="card2 card" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
+          <img src="Images/outdoor sport banner.jpg" alt="">
+          <div class="outdoorsports titleDiv">
+          <h4><a href="ourFacilities.html #outdoor">OUTDOOR GAMES</a></h4>
+          </div>
+        </div>
+
+        <div class="card3 card" data-aos="fade-up" data-aos-duration="1500">
+          <img src="Images/Recreation banner.jpg" alt="">
+          <div class="recreation titleDiv">
+          <h4><a href="ourFacilities.html #recreation">RECREATION</a></h4>
+          </div>
+        </div>
+      </div>
+      <a href="ourFacilities.html"><button>view All Facilities</button></a>
+      <p>We are the only <span>CLUB</span> in town that provides access<br>to various Leisure & Recreational Facilities.</p>
+    </section>
+    <!-- our facilities section ends  -->
+
+
+    <!-- filter gallery section starts  -->
+   
+    <div class="section">
+      <div class="gallery">
+        <h2>IMAGE <span>GALLERY</span></h2>
+      </div>
+      <input type="radio" id="All" Name="radioBtn" checked>
+      <input type="radio" id="IndoorSports" Name="radioBtn">
+      <input type="radio" id="OutdoorSports" Name="radioBtn">
+      <input type="radio" id="Recreation" Name="radioBtn">
+      <input type="radio" id="Events" Name="radioBtn">
+
+      <label for="All" class="tag All">All</label>
+      <label for="IndoorSports" class="tag IndoorSports">Indoor Games</label>
+      <label for="OutdoorSports" class="tag OutdoorSports">Outdoor Games</label>
+      <label for="Recreation" class="tag Recreation">Recreation</label>
+      <label for="Events" class="tag Events">Events</label>
+
+      <div class="image">
+        <img src="Images/Dart Board.jpg" alt="" class="IndoorSports">
+        <img src="Images/carrom board.jpg" alt="" class="IndoorSports">
+        <img src="Images/Basket ball.jpg" alt="" class="OutdoorSports">
+        <img src="Images/boating lake.jpg" alt="" class="Recreation">
+        <img src="Images/pakistan day.jpg" alt="" class="Events">
+        <img src="Images/Snooker.jpg" alt="" class="IndoorSports">
+        <img src="Images/Badminton.jpg" alt="" class="OutdoorSports">
+        <img src="Images/bicycles.jpg" alt="" class="outdoorSports">
+        <img src="Images/bungee.jpg" alt="" class="Recreation">
+        <img src="Images/our facilities banner.jpg" alt="" class="Events">
+        <img src="Images/Table tennis.jpg" alt="" class="IndoorSports">
+        <img src="Images/cricket.jpg" alt="" class="OutdoorSports">
+        <img src="Images/go-kart.jpg" alt="" class="Recreation">
+        <img src="Images/ice skating.jpg" alt="" class="Recreation">
+        <img src="Images/stunt karachi.jpg" alt="" class="Events">
+      </div>
+    <!-- filter gallery section ends  -->
+
+    <!-- footer section starts  -->
+    <footer>
+      <div class="content">
+          <div class="sect aboutus">
+              <h2>About Us</h2>
+              <p>Ryan Sports Club is a magnificent escape to one-of-a-kind getaway in Pakistan. It is a fitness club in Karachi that provides attractions for all ages and offer guests with amenities of their choice including loads of family entertainment, artificial beach access, water recreation, dining, golf and lots more.</p>
+              <ul>
+                  <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                  <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+              </ul>
+          </div>
+          <div class="sect quicklinks">
+              <h2>Quick Links</h2>
+              <ul>
+                  <li><a href="Index.html">Home</a></li>
+                  <li><a href="AboutUs.html">About Us</a></li>
+                  <li><a href="ourFacilities.html">Our Facilities</a></li>
+                  <li><a href="Membership.html">Memberships</a></li>
+                  <li><a href="contactUs.html">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="sect contactus">
+              <h2>Contact Us</h2>
+              <ul>
+                  <li>
+                      <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                      <span>786 Second Street<br>DHA Phase VIII,<br>Karachi</span>
+                  </li>
+                  <li>
+                      <span><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                      <p><a href="">areebh325@gmail.com</a></p>
+                  </li>
+                  <li>
+                      <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                      <p><a href="">+92 30 12345665</a><br>
+                      <a href="">+92 30 12345665</a></p>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </footer>
+  <div class="copyright">
+      <p>Copyright &copy; 2021 <a href="" target="blank">Areeb Hussain. </a>All rights reserved</p>
+  </div>
+     <!-- ends  -->
+
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 0,
+          centeredSlides: true,
+          autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable:true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>AOS.init();</script>
+      <script>
+         window.addEventListener("scroll",function()
+         {
+             document.getElementById("myheader").classList.toggle("sticky",scrollY>300)
+         })
+      </script>
+      <!-- filter gallery code  -->
+      <script>
+        $(".list").click(function()
+          {
+              const value = $(this).attr("data-filter");
+              if(value=="all")
+              {
+                  $(".itemBox").show('1000');
+              }
+              else
+              {
+                  $(".itemBox").not("."+value).hide('500');
+                  $(".itemBox").filter("."+value).show('500');
+              }
+          })
+          $(".list").click(function()
+          {
+              $(this).addClass("active").siblings().removeClass("active");
+          })
+      </script>
+      <!-- ends  -->
+
+      <!-- Jquery CDN  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
